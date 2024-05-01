@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+    <title>Q4 Practice 3</title>
+
+    <style>
+		body{
+			font-family: serif;
+			background-image: url(https://as2.ftcdn.net/v2/jpg/02/99/84/89/1000_F_299848927_S0EwX0P6HWGigW6qZWFIBaczKMQuq5D9.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+    </style>
+</head>
+<body>
+<center>
+	<div class="col-md-6" id="box">
+    <form class="form-group">
+    	<form class="form-group">
+				<label>Enter value for X</label>
+				<input type="number" class="form-control" id="numX">
+				<label>Enter value for Y</label>
+				<input type="number" class="form-control" id="numY">
+				<br>
+				<details ontoggle="message()">
+           <button  type="submit" id="submit" onclick="add()">Addition</button>
+           <button  type="submit" id="submit" onclick="subtract()">Subtract</button>
+           <br>
+           <button  type="submit" id="submit" onclick="multiply()">Multiply</button>
+           <button  type="submit" id="submit" onclick="divide()">Divide</button>
+
+</form>
+</div>
+
+<script type="text/javascript">
+
+function add(){
+        var num1 = document.getElementById("numX").value;
+        var num2 = document.getElementById("numY").value;
+        var add = Number(num1) + Number(num2);
+        alert(add);
+
+    }
+function subtract(){
+    var numX= document.getElementById("numX").value;
+    var numY = document.getElementById("numY").value;
+    var subtract = Number(numX) - Number(numY);
+
+    alert(subtract);
+}
+function multiply(){
+    var numX = document.getElementById("numX").value;
+    var numY = document.getElementById("numY").value;
+    var multiply = Number(numX) * Number(numY);
+
+    alert(multiply);
+}
+function divide(){
+    var numX = document.getElementById("numX").value;
+    var numY = document.getElementById("numY").value;
+    var divide= Number(numX) / Number(numY);
+
+    alert(divide);
+  }
+</script>
+</body>
+</html>
